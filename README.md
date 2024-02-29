@@ -46,7 +46,7 @@ def update_user(user_id):
 
 @app.route('/users/<int:user_id>', methods=['DELETE'])
 def delete_user(user_id):
-    user = User.query.get_or_404(user_id)
+    user = User.query.get_or_404(user_id)(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)
     db.session.delete(user)
     db.session.commit()
     return jsonify({'message': 'User deleted successfully'})
