@@ -9,7 +9,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 class User(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)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
     name = db.Column(db.String(50), nullable=False)
     email = db.Column(db.String(50), nullable=False)
 
